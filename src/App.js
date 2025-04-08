@@ -1,17 +1,14 @@
-
 import './App.css';
-import Banner from './components/banner.js';
-import CampoTexto from './components/login.js';
-import Confirm from './components/confirm.js';
+import Banner from './components/banner/banner.js';
+import Confirm from './components/confirm/confirm.js';
+import Formulario from './components/formulario/index.js';
+import './components/formulario/Formulario.css'
 
 function App() {
   return (
     <div className="App">
       <Banner/>
-      <CampoTexto label="Nome" placeholder="Digite o seu nome..."/>
-      <CampoTexto label="Email" placeholder="Digite o seu email..."/>
-      <CampoTexto label="Senha" placeholder="Digite a sua senha..."/>
-      <Confirm/>
+      <Formulario/>
     </div>
   );
 }
